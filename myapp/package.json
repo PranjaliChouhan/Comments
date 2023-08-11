@@ -14,7 +14,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start":"concurrently \"react-scripts start\" \"node src/mockServer.js\"",
+    "start": "concurrently \"react-scripts start\" \"node src/mockServer.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

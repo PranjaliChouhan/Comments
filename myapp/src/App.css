@@ -36,36 +36,53 @@
     transform: rotate(360deg);
   }
 }
-
+body{
+  background-color: black;
+}
 
 .App img{
   width: 500px;
   height: 300px;
+  margin: 10px;
 }
 
 .comments {
-  margin-top: 20px;
+  margin: 20px;
+  
+  
 }
 
 .comments-title {
   font-size: 30px;
   margin-bottom: 20px;
+  color: #6f7070;
 }
 
 .comments-container {
-  margin-top: 40px;
+  width: 100%;
+  margin: 40px;
+  padding: 10px 20px 10px 10px;
+  background-color: rgb(226, 230, 232);
+  border-radius: 1.5rem;
+  
+
 }
+
+
 
 .comment-form-title {
   font-size: 22px;
+  color: #6f7070;
 }
 
 .comment-form-textarea {
   width: 100%;
   height: 80px;
   margin-bottom: 8px;
-  margin-top: 8px;
-  border: 1px solid rgb(107, 114, 12);
+ display: flex;
+  border: 1px solid rgb(85, 124, 118);
+  border-radius: 2.5rem;
+
 }
 
 .comment-form-button {
@@ -93,6 +110,7 @@
 .comment {
   display: flex;
   margin-bottom: 28px;
+  
 }
 
 .comment-image-container {
@@ -142,3 +160,25 @@
 .replies {
   margin-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .comment-form-textarea{
+    margin-top: 20px;
+    width: 500px;
+    
+  }
+  .comments-container {
+    width: 450px;
+    margin: 10px;
+
+  }
+}
+

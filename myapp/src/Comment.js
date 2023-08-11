@@ -1,4 +1,7 @@
 import CommentForm from "./CommentForm";
+
+import DOMPurify from "dompurify";
+
 import gojo from "./assets/gojo.jpg";
 
 const Comment = ({
@@ -28,17 +31,21 @@ const Comment = ({
   const canEdit = currentUserId === comment.userId && !timePassed;
   const replyId = parentId ? parentId : comment.id;
   const createdAt = new Date(comment.createdAt).toLocaleDateString();
+  const sanitizedContent = DOMPurify.sanitize(comment.body);
   return (
+    <>
     <div key={comment.id} className="comment">
       <div className="comment-image-container">
         <img src={gojo} />
+       
       </div>
       <div className="comment-right-part">
         <div className="comment-content">
           <div className="comment-author">{comment.username}</div>
           <div>{createdAt}</div>
         </div>
-        {!isEditing && <div className="comment-text">{comment.body}</div>}
+        
+        {!isEditing && <div className="comment-text">{sanitizedContent}</div>}
         {isEditing && (
           <CommentForm
             submitLabel="Update"
@@ -104,8 +111,10 @@ const Comment = ({
             ))}
           </div>
         )}
+       
       </div>
     </div>
+    </>
   );
 };
 

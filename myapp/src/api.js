@@ -1,3 +1,5 @@
+import gojo from "./assets/gojo.jpg";
+
 export const getComments = async () => {
     return [
       {
@@ -7,6 +9,7 @@ export const getComments = async () => {
         userId: "1",
         parentId: null,
         createdAt: "2023-10-08:00:33.010+02:00",
+       
       },
       {
         id: "2",
@@ -15,12 +18,13 @@ export const getComments = async () => {
         userId: "2",
         parentId: null,
         createdAt: "2023-10-08:00:33.010+02:00",
+        
       },
       {
         id: "3",
         body: "First comment first child",
         username: "Saitama",
-        userId: "2",
+        userId: "3",
         parentId: "1",
         createdAt: "2023-10-08:00:33.010+02:00",
       },
@@ -28,7 +32,7 @@ export const getComments = async () => {
         id: "4",
         body: "Second comment second child",
         username: "Nezuko kamado",
-        userId: "2",
+        userId: "4",
         parentId: "2",
         createdAt: "2023-10-08:00:33.010+02:00",
       },
