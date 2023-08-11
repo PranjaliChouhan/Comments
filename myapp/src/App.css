@@ -59,8 +59,8 @@ body{
 }
 
 .comments-container {
-  width: 97%;
-  margin: 20px;
+  width: 95%;
+  margin: 20px ;
  
   padding: 10px 20px 10px 10px;
   background-color: rgb(226, 230, 232);
@@ -77,7 +77,7 @@ body{
 }
 
 .comment-form-textarea {
-  width: 95%;
+  width: 90%;
   height: 80px;
   margin-bottom: 8px;
  display: flex;
