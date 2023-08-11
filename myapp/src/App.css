@@ -77,12 +77,13 @@ body{
 }
 
 .comment-form-textarea {
-  width: 100%;
+  width: 95%;
   height: 80px;
   margin-bottom: 8px;
  display: flex;
   border: 1px solid rgb(85, 124, 118);
   border-radius: 2.5rem;
+  padding: 10px 20px ;
 
 }
 
