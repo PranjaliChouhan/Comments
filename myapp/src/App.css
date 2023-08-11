@@ -59,7 +59,7 @@ body{
 }
 
 .comments-container {
-  width: 90%;
+  width: 97%;
   margin: 20px;
  
   padding: 10px 20px 10px 10px;
@@ -171,16 +171,11 @@ body{
     align-items: center;
     
   }
+  .App img{
+    margin: 20px;
+  }
   
-  .comment-form-textarea{
-    margin-top: 20px;
-    width: 500px;
-    
-  }
-  .comments-container {
-    width: 450px;
-    margin: 10px;
-
-  }
+  
+  
 }
 
